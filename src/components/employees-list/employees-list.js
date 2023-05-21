@@ -6,7 +6,7 @@ const EmployeesList = ({data}) => {
 
     const elements = data.map(item => {
         return (
-            <EmployeesListItem name={item.name} salary={item.salary}/>
+            <EmployeesListItem {...item}/>
         )
     })
 
